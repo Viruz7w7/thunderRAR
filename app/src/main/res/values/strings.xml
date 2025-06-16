@@ -1,0 +1,19 @@
+<resources>
+    //nombre de la app
+    <string name="app_name">thunderRAR</string>
+    //Strings de activity_main
+    <string name="Texto1">Ingrese su correo de empleado:</string>
+    <string name="HintUsuario">USUARIO</string>
+    <string name="HintContraseña">CONTRASEÑA</string>
+    <string name="BotonInicioSesion">INICIAR SESION</string>
+    <string name="BotonCliente">SOY CLIENTE</string>
+    <string name="BotonRegistro">REGISTRARSE</string>
+    //Strings de activity_menu
+    <string name="TextoComunidad">Comunidad</string>
+    <string name="TextoVenta">Venta</string>
+    <string name="TextoLogistica">Logistica</string>
+    <string name="TextoReporte">Reporte</string>
+    //Strings de activity_registro (comparte HintUsuario, HintContraseña y BotonRegistro con activity_main)
+    <string name="TextoRegistro">Registrarse</string>
+
+</resources>
