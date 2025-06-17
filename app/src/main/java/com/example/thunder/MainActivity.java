@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         Intent reg = new Intent(this,activity_registro.class);
         startActivity(reg);
     }
-    //metodo para consulta de dispositivos
+    //metodo para cliente
     public void cliente (View view){
         Intent cli = new Intent(this, activity_cliente.class);
         startActivity(cli);
