@@ -36,6 +36,7 @@
             android:ems="10"
             android:hint="@string/HintUsuario"
             android:inputType="text"
+            android:minHeight="48dp"
             android:textColor="#000000"
             android:textColorHint="#090909" />
 
@@ -47,6 +48,7 @@
             android:ems="10"
             android:hint="@string/HintContraseña"
             android:inputType="textPassword"
+            android:minHeight="48dp"
             android:textColor="#000000"
             android:textColorHint="#090909" />
 

@@ -1,7 +1,8 @@
 <resources>
     //nombre de la app
-    <string name="app_name">thunderRAR</string>
+    <string name="app_name">ThunderRAR</string>
     //Strings de activity_main
+    <string name="bienvenido">¡Bienvenido a ThunderRAR!</string>
     <string name="Texto1">Ingrese su correo de empleado:</string>
     <string name="HintUsuario">USUARIO</string>
     <string name="HintContraseña">CONTRASEÑA</string>
