@@ -34,8 +34,13 @@ public class activity_registro extends AppCompatActivity {
     }
 
     public void enviar(View view) {
+        String usuario = reg_usuario.getText().toString();
+        String password = reg_password.getText().toString();
+        if (usuario.isEmpty() || password.isEmpty()) {
+            Toast.makeText(this, "Ingrese su usuario y contraseña", Toast.LENGTH_SHORT).show();
+            return;
+        }
         Intent i = new Intent(this,MainActivity.class);
-        Intent i2 = new Intent(this,Activity_menu.class);
         i.putExtra("dato",reg_usuario.getText().toString());
         i.putExtra("dato2",reg_password.getText().toString());
         Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show();
