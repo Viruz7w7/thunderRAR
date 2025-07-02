@@ -9,6 +9,7 @@
     <string name="BotonInicioSesion">INICIAR SESION</string>
     <string name="BotonCliente">SOY CLIENTE</string>
     <string name="BotonRegistro">REGISTRARSE</string>
+    <string name="Consultas">Si tienes unas consultas contactanos por esos medios: </string>
     //Strings de activity_menu
     <string name="TextoComunidad">Comunidad</string>
     <string name="TextoVenta">Venta</string>

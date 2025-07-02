@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/fondo_pantalla_xp"
+    android:background="@mipmap/fondo_pantalla_inico"
     tools:context=".MainActivity">
 
 
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:text="@string/Texto1"
-            android:textColor="#000000"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
         <EditText
@@ -51,13 +51,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints=""
-            android:backgroundTint="#000000"
+            android:backgroundTint="@color/white"
             android:ems="10"
             android:foregroundTint="#020202"
             android:hint="@string/HintUsuario"
             android:inputType="text"
-            android:textColor="#000000"
-            android:textColorHint="#6A000000"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:textSize="20sp" />
 
         <EditText
@@ -65,12 +65,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints=""
-            android:backgroundTint="#000000"
+            android:backgroundTint="@color/white"
             android:ems="10"
             android:hint="@string/HintContraseña"
             android:inputType="textPassword"
-            android:textColor="#000000"
-            android:textColorHint="#84090909"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:textSize="20sp" />
 
         <Button
@@ -110,7 +110,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textColor="#050505"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -123,7 +123,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
         android:text="@string/bienvenido"
-        android:textColor="#050505"
+        android:textColor="@color/white"
         android:textSize="19sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -135,32 +135,50 @@
         android:layout_width="41dp"
         android:layout_height="38dp"
         android:layout_marginStart="88dp"
+        android:layout_marginTop="14dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
         app:srcCompat="@mipmap/icon_git_hub"
-        tools:ignore="TouchTargetSizeCheck"
-        tools:layout_editor_absoluteY="626dp" />
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/imageButton10"
         android:layout_width="42dp"
         android:layout_height="37dp"
         android:layout_marginStart="55dp"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="55dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintEnd_toStartOf="@+id/imageButton11"
         app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
         app:srcCompat="@mipmap/icon_whatsapp"
-        tools:layout_editor_absoluteY="626dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/imageButton11"
         android:layout_width="41dp"
         android:layout_height="35dp"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="88dp"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@mipmap/icon_autonoma"
-        tools:layout_editor_absoluteY="626dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@mipmap/icon_autonoma" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/Consultas"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
