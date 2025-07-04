@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.net.Uri;
 import android.widget.Toast;
 
 
@@ -13,10 +15,15 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
 
     private EditText txt_password,txt_usuario;
     private String datoUsuarioRecibido,dato2PasswordRecibido;
+
+    private ImageButton Github, Whatsapp, Autonoma;
+    private  final static String GITHUB_URL = "https://github.com/Viruz7w7/thunderRAR";
+    private  final static String WHATSAPP_URL = "https://wa.me/929470345";
+    private  final static String AUTONOMA_URL = "https://www.autonoma.pe";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
         datoUsuarioRecibido = getIntent().getStringExtra("dato");
         dato2PasswordRecibido = getIntent().getStringExtra("dato2");
 
+        Github = findViewById(R.id.btGithub);
+        Whatsapp = findViewById(R.id.btWhatsapp);
+        Autonoma = findViewById(R.id.btAutonoma);
+
+        Github.setOnClickListener(this);
+        Whatsapp.setOnClickListener(this);
+        Autonoma.setOnClickListener(this);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -67,5 +81,27 @@ public class MainActivity extends AppCompatActivity {
     public void cliente (View view){
         Intent cli = new Intent(this, activity_cliente.class);
         startActivity(cli);
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        String urlToOpen = null;
+        int viewId = v.getId();
+        if (viewId == R.id.btGithub){
+            urlToOpen = GITHUB_URL;
+        }else if (viewId == R.id.btWhatsapp){
+            urlToOpen = WHATSAPP_URL;
+        }else if (viewId == R.id.btAutonoma){
+            urlToOpen = AUTONOMA_URL;
+        }
+        if (urlToOpen != null){
+            intent.setData(Uri.parse(urlToOpen));
+            if (intent.resolveActivity(getPackageManager()) != null){
+                startActivity(intent);
+            }else{
+                Toast.makeText(this, "No se puede abrir el navegador", Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 }

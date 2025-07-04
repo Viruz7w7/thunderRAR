@@ -131,33 +131,34 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/btGithub"
         android:layout_width="41dp"
         android:layout_height="38dp"
         android:layout_marginStart="88dp"
         android:layout_marginTop="14dp"
         android:backgroundTint="#00FFFFFF"
+        android:onClick="onClick"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
         app:srcCompat="@mipmap/icon_git_hub"
         tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/btWhatsapp"
         android:layout_width="42dp"
         android:layout_height="37dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="55dp"
         android:backgroundTint="#00FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton11"
-        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        app:layout_constraintEnd_toStartOf="@+id/btAutonoma"
+        app:layout_constraintStart_toEndOf="@+id/btGithub"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
         app:srcCompat="@mipmap/icon_whatsapp"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton11"
+        android:id="@+id/btAutonoma"
         android:layout_width="41dp"
         android:layout_height="35dp"
         android:layout_marginTop="14dp"
