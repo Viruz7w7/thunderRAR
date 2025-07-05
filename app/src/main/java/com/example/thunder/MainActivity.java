@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     private String datoUsuarioRecibido,dato2PasswordRecibido;
 
     private ImageButton Github, Whatsapp, Autonoma;
-    private  final static String GITHUB_URL = "https://github.com/Viruz7w7/thunderRAR";
-    private  final static String WHATSAPP_URL = "https://wa.me/929470345";
-    private  final static String AUTONOMA_URL = "https://www.autonoma.pe";
+    private  final static String GITHUB_URL ="https://github.com/Viruz7w7/thunderRAR";
+    private  final static String WHATSAPP_URL ="https://wa.me/929470345";
+    private  final static String AUTONOMA_URL ="https://www.autonoma.pe";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

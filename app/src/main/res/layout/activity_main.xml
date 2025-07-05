@@ -151,6 +151,7 @@
         android:layout_marginTop="14dp"
         android:layout_marginEnd="55dp"
         android:backgroundTint="#00FFFFFF"
+        android:onClick="onClick"
         app:layout_constraintEnd_toStartOf="@+id/btAutonoma"
         app:layout_constraintStart_toEndOf="@+id/btGithub"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
@@ -164,6 +165,7 @@
         android:layout_marginTop="14dp"
         android:layout_marginEnd="88dp"
         android:backgroundTint="#00FFFFFF"
+        android:onClick="onClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
         app:srcCompat="@mipmap/icon_autonoma" />
