@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/fondo_pantalla_menu"
+    android:background="@mipmap/fondo_pantalla_menu_prueba"
     android:visibility="visible"
     tools:context=".Activity_menu">
 
@@ -45,7 +45,8 @@
                 android:background="#03FFFFFF"
                 android:backgroundTint="#00FFFFFF"
                 android:onClick="men_venta"
-                app:srcCompat="@mipmap/icon_venta" />
+                app:srcCompat="@mipmap/icon_venta"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </TableRow>
 
